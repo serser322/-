@@ -28,13 +28,13 @@ export default {
     width: 60%;
     margin: 0 26.95px 9.35px auto;
     position: relative;
-    animation: textFadeIn 0.7s ease;
+    animation: textFadeIn 1s ease;
   }
 
   .introduction {
     margin: 0 22.67px 24.07px 22.67px;
     position: relative;
-    animation: textFadeIn 0.7s ease;
+    animation: textFadeIn 1s ease;
   }
 }
 
@@ -62,9 +62,7 @@ export default {
     }
 
     .introduction {
-      margin: 0 44.75px 20px 44.75pxpx;
-      /* padding: 0 5px 0 5px;
-      margin-bottom: 20px; */
+      margin: 0 44.75px 20px 44.75px;
     }
   }
 }

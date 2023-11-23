@@ -84,7 +84,7 @@ import BirdLogo from "./BirdLogo.vue";
 export default {
   name: "NavBar",
   components: {
-    BirdLogo
+    BirdLogo,
   },
   setup() {
     const isMenuOpen = ref(false);
@@ -256,7 +256,7 @@ export default {
         height: 100vh;
         position: relative;
         display: inline-block;
-        animation: menuFadeIn 0.5s ease;
+        animation: menuFadeIn 1s ease;
 
         .logo {
           width: 97px;
@@ -274,7 +274,6 @@ export default {
             position: relative;
             top: 35px;
             left: 38px;
-
           }
 
           @keyframes logoRotate {
@@ -343,5 +342,4 @@ export default {
       }
     }
   }
-}
-</style>
+}</style>

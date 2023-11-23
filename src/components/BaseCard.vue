@@ -25,7 +25,7 @@ export default {
 .card {
   margin: 0 36.38px;
   position: relative;
-  animation: cardFadeIn 0.7s ease;
+  animation: cardFadeIn 1s ease;
 
   .caption {
     margin-right: 37.84px;

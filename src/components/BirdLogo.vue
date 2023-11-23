@@ -25,7 +25,7 @@
     overflow: hidden;
 
     &:before {
-      content: '';
+      content: "";
       width: 22px;
       height: 22px;
       position: absolute;
@@ -34,7 +34,7 @@
     }
 
     &:after {
-      content: '';
+      content: "";
       width: 22px;
       height: 22px;
       position: absolute;
@@ -53,7 +53,7 @@
     right: 6px;
     border-radius: 50%;
     background-color: black;
-    z-index: 32;
+    z-index: 3;
   }
 
   .beak {
@@ -62,12 +62,10 @@
     position: absolute;
     top: 5px;
     right: -5px;
-    /* border: 0.1px solid white; */
     overflow: hidden;
-    /* z-index: -1; */
 
     &:before {
-      content: '';
+      content: "";
       width: 9px;
       height: 10px;
       position: absolute;
@@ -104,7 +102,7 @@
 
   .beak-mask {
     width: 9px;
-    height: 3px;
+    height: 4px;
     position: relative;
     top: 9px;
     left: 21px;
@@ -147,7 +145,5 @@
       border-bottom-right-radius: 50% 55%;
     }
   }
-
-
 }
 </style>
