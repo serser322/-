@@ -1,6 +1,6 @@
 <template>
-  <div class="banner flex flex-col justify-end bg-no-repeat text-white sm:items-end">
-    <div class="title font-bold flex flex-col self-end sm:flex-row sm:justify-end">
+  <div class="banner flex flex-col justify-end bg-no-repeat text-white md:items-end">
+    <div class="title font-bold flex flex-col self-end lg:flex-row md:justify-end">
       <div class="text-5xl text-right leading-none">白頭翁</div>
       <div class="text-5xl text-right leading-none">(Chinese bulbul)</div>
     </div>
@@ -27,18 +27,34 @@ export default {
   .title {
     width: 60%;
     margin: 0 26.95px 9.35px auto;
+    position: relative;
+    animation: textFadeIn 0.7s ease;
   }
 
   .introduction {
     margin: 0 22.67px 24.07px 22.67px;
+    position: relative;
+    animation: textFadeIn 0.7s ease;
   }
 }
 
-@media (min-width:640px) {
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+    right: -50px;
+  }
+
+  100% {
+    opacity: 100%;
+    right: 0px;
+  }
+}
+
+@media (min-width: 768px) {
   .banner {
-    height: 634.21px;
-    background-size: 155%;
-    background-position: 80%;
+    min-height: 450px;
+    background-size: 180%;
+    background-position: 60%;
 
     .title {
       width: 100%;
@@ -46,9 +62,22 @@ export default {
     }
 
     .introduction {
-      margin: 0;
-      margin: 0 44.75px 36.85px 0;
+      margin: 0 44.75px 20px 44.75pxpx;
+      /* padding: 0 5px 0 5px;
+      margin-bottom: 20px; */
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    min-height: 634.21px;
+    background-size: 180%;
+    background-position: 70%;
+  }
+
+  .introduction {
+    margin-bottom: 36.85px;
   }
 }
 </style>

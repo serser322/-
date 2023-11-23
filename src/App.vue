@@ -1,10 +1,10 @@
 <template>
   <div
     id="app"
-    class="sm:flex"
+    class="md:flex"
   >
     <NavBar />
-    <main class="flex flex-col">
+    <main class="md:flex flex-col">
       <Banner />
       <PageContent class="grow" />
     </main>
@@ -26,7 +26,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+html,
+body {
+  height: 100%;
+}
+
 #app {
   font-family: "Noto Sans";
   height: 100%;
@@ -34,5 +39,4 @@ export default {
   main {
     height: 100%;
   }
-}
-</style>
+}</style>

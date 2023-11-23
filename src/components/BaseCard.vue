@@ -24,6 +24,8 @@ export default {
 <style lang="scss" scoped>
 .card {
   margin: 0 36.38px;
+  position: relative;
+  animation: cardFadeIn 0.7s ease;
 
   .caption {
     margin-right: 37.84px;
@@ -44,7 +46,24 @@ export default {
   }
 }
 
-@media (min-width: 640px) {
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+    bottom: -50px;
+  }
+
+  50% {
+    opacity: 0;
+    bottom: -50px;
+  }
+
+  100% {
+    opacity: 100%;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) {
   .card {
     margin: 0;
   }

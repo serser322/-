@@ -1,5 +1,5 @@
 <template>
-  <section class="content grid justify-center sm:grid-cols-3">
+  <section class="content grid justify-center md:grid-cols-3">
     <BaseCard
       v-for="item in introData"
       :key="item.caption"
@@ -49,10 +49,16 @@ export default {
   gap: 50.5px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
+  .content {
+    padding: 58.15px 30px 84px 30px;
+    gap: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
   .content {
     padding: 58.15px 50.74px 84px 50.74px;
     gap: 79px;
   }
-}
-</style>
+}</style>
